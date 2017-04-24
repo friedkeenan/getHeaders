@@ -1,6 +1,5 @@
 from requests import get
 from os import makedirs,path,listdir
-from shutil import rmtree
 response=get("http://developer.limneos.net/index.php?ios=9.3.3").text
 lines=response.split("\n")[128].split("</div>")[:-2]
 unpause=False;
